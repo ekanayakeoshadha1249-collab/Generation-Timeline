@@ -1,0 +1,159 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* ===== Body and Background ===== */
+body {
+  background-color: #f7f9fc;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+  font-size: 2.2em;
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* ===== Generation Grid ===== */
+.generation-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  padding: 40px 60px;
+  flex: 1;
+}
+
+.generation-card {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 25px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #222;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.generation-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+.generation-card .symbol {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #3949ab;
+}
+
+.generation-card h3 {
+  font-size: 1.3em;
+  color: #1a237e;
+  margin-bottom: 6px;
+}
+
+.generation-card p {
+  color: #666;
+  font-size: 0.95em;
+}
+
+/* ===== Detail Pages ===== */
+.detail {
+  max-width: 800px;
+  margin: 60px auto;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+}
+
+.detail .symbol {
+  font-size: 4em;
+  margin-bottom: 10px;
+  color: #283593;
+}
+
+.detail h2 {
+  font-size: 1.8em;
+  color: #1a237e;
+  margin-bottom: 8px;
+}
+
+.detail .years {
+  font-size: 1em;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.detail p {
+  font-size: 1.05em;
+  line-height: 1.7em;
+  color: #333;
+  text-align: justify;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #1a237e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #303f9f;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #666;
+  font-size: 0.9em;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .generation-list {
+    padding: 30px 20px;
+    gap: 15px;
+  }
+
+  .generation-card {
+    padding: 20px 15px;
+  }
+
+  .detail {
+    margin: 40px 15px;
+    padding: 25px;
+  }
+}
